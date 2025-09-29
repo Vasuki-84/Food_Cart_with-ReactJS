@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Products from './components/Products'
+import Recipes from './components/Recipes'
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div> 
       <Navbar />
       <Hero />
-      {/* <Products /> */}
+     <Recipes />
     </div>
 
 
