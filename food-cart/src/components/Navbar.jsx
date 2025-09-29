@@ -45,6 +45,4 @@ function Navbar() {
 }
 
 export default Navbar;
-{
-  /* https://dummyjson.com/recipes */
-}
+
