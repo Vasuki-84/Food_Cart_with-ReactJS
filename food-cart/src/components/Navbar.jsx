@@ -6,10 +6,10 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
-    <div className="bg-green-300 shadow-lg fixed w-full">
+    <div className="bg-green-300 shadow-md fixed w-full">
       {/* responsiveness */}
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-12 items-center">
           <div className="text-2xl font-extrabold text-red-500">FoodCart</div>
 
           {/* Laptop & desktop */}
@@ -31,7 +31,7 @@ function Navbar() {
       {/* mobile menu design */}
       {
         isOpen && (
-        <div className="md:hidden bg-green-300 shadow-lg p-4 space-y-5 ">
+        <div className="md:hidden bg-green-300 shadow-md p-3 space-y-4 ">
             <a className="block"  href="#">Home</a>
              <a  className="block"   href="#">Foods</a>
              <a   className="block"  href="#">offers</a>
