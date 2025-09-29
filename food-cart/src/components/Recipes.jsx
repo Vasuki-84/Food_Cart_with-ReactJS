@@ -19,7 +19,10 @@ function Recipes() {
             <div key={item.id} className='bg-gray-100 shadow-md rounded p-5 flex flex-col items-center '>
               <img className='h-40 w-auto mb-4 object-contain rounded-3xl' src={item.image} alt={item.name} />
               <h4 className='text-lg md:text-xl font-semibold mb-2 text-center'>{item.name}</h4>
-              <p className='text-red-600 font-bold text-lg mb-2'>Calories: {item.caloriesPerServing}</p>
+              <div className=' font-semibold text-lg mb-2 flex items-center gap-10'>
+                <p className="font-bold text-gray-600">{item.cuisine} </p>
+              <p className=" text-red-600">Rating: {item.rating}</p> 
+              </div>
               <button className='bg-lime-400 px-6 py-2 cursor-pointer text-red-700 rounded text-lg'>View Recipe</button>
             </div>
           ))
