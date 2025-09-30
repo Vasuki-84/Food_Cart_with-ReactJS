@@ -8,7 +8,7 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
-    <div className="bg-lime-400 shadow-md fixed w-full">
+    <div className="bg-lime-400 shadow-md fixed w-full font-mono ...">
       {/* responsiveness */}
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex justify-between h-12 items-center">

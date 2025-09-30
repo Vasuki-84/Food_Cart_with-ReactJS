@@ -21,7 +21,7 @@ function Recipes() {
   }, []);
 
   return (
-    <div className="p-4 md:p-8 bg-gray-600 min-h-screen">
+    <div className="font-mono ... p-4 md:p-8 bg-gray-600 min-h-screen">
       <h3 className="text-2xl md:text-3xl font-bold text-center text-white p-4 mb-6">
         Our Recipes
       </h3>
