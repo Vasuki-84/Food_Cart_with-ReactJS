@@ -3,10 +3,10 @@ import React from "react";
 function Hero() {
   return (
     <div
-      className="bg-cover h-[600px] md-h-[400px] lg-h-[800px] flex  flex-col justify-center items-center text-center font-extrabold px-4"
+      className="bg-cover h-[400px] md-h-[400px] lg-h-[800px] flex  flex-col justify-center items-center text-center font-extrabold px-4"
       style={{
         backgroundImage:
-          'url("https://i.pinimg.com/736x/03/43/a6/0343a6c7b56250f97a2c5caea1d145ed.jpg")',
+          'url("https://i.pinimg.com/736x/73/a2/1e/73a21ec135fd9305bf81a664a1f84690.jpg")',
       }}
     >
       <div className="bg-white/20 p-6 rounded  max-w-2xl border border-white/30 backdrop-blur-md">

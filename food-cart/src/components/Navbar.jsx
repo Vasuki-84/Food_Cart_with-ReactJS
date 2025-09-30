@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextAlignJustify, X } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
-import { Home, Utensils, Percent, HelpCircle } from "lucide-react";
+import { Home, Utensils, Percent,  Phone } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ function Navbar() {
               <Percent size={18} /> Offers
             </a>
             <a href="#" className="flex items-center gap-2">
-              <HelpCircle size={18} /> Help
+              <Phone size={18} />Contact us
             </a>
           </div>
 
