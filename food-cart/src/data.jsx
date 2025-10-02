@@ -1,3 +1,6 @@
+
+
+
 import { Home, Utensils, Tag, Phone, Icon } from "lucide-react";
 
 export const navbarLinks = [
@@ -14,11 +17,11 @@ export const navbarLinks = [
   {
     id: 3,
     name: "Offers",
-    icon: <Tag size={18} />
+    icon: <Tag size={18} />,
   },
   {
     id: 4,
     name: "Contact US",
-     icon: <Phone size={18} />
+     icon: <Phone size={18} />,
   },
 ];

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { navbarLinks } from "../data";
+import { navbarLinks } from "../data.jsx";
 import { TextAlignJustify, X } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
-
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +22,10 @@ function Navbar() {
 
           <div className=" hidden md:flex space-x-6">
             {navbarLinks.map((link) => (
-              <li key={link.id} className="list-none">
-                
+              <a key={link.id} className="list-none flex items-center gap-2  cursor-pointer">
                 {link.icon}
                 {link.name}
-              </li>
+              </a>
             ))}
           </div>
           {/* Mobile */}
