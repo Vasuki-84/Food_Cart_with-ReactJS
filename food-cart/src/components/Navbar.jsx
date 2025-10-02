@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { navbarLinks } from "../data";
 import { TextAlignJustify, X } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
-import { Home, Utensils, Percent,  Phone } from "lucide-react";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,21 +20,16 @@ function Navbar() {
           </div>
 
           {/* Laptop & desktop */}
-          <div className=" hidden md:flex space-x-6">
-            <a href="#" className="flex items-center gap-2">
-              <Home size={18} /> Home
-            </a>
-            <a href="#" className="flex items-center gap-2">
-              <Utensils size={18} /> Foods
-            </a>
-            <a href="#" className="flex items-center gap-2">
-              <Percent size={18} /> Offers
-            </a>
-            <a href="#" className="flex items-center gap-2">
-              <Phone size={18} />Contact us
-            </a>
-          </div>
 
+          <div className=" hidden md:flex space-x-6">
+            {navbarLinks.map((link) => (
+              <li key={link.id} className="list-none">
+                
+                {link.icon}
+                {link.name}
+              </li>
+            ))}
+          </div>
           {/* Mobile */}
           <div className="md:hidden">
             <button onClick={toggleMenu}>

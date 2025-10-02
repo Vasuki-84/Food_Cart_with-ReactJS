@@ -12,7 +12,7 @@ function Recipes() {
           // Add random price to each recipe
           const recipesWithPrice = data.recipes.map((recipe) => ({
             ...recipe,
-            price: Math.floor(Math.random() * 200) + 100, // Random ₹100-₹300
+            price: Math.floor(Math.random() * 200) + 100, 
           }));
           setRecipes(recipesWithPrice);
         }
@@ -21,7 +21,7 @@ function Recipes() {
   }, []);
 
   return (
-    <div className="font-mono ... p-4 md:p-8 bg-gray-200 min-h-screen  ">
+    <div className="font-mono ... p-4 md:p-8 sm:px-7 bg-gray-200 min-h-screen  ">
 
       <h3 className="text-2xl md:text-3xl font-bold text-center text-black p-4 mb-6">
         Our Recipes
