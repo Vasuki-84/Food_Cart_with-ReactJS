@@ -8,7 +8,7 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
-    <div className="bg-lime-400 shadow-md fixed w-full font-mono ...">
+    <div className="bg-lime-400 shadow-md fixed w-full font-mono ... top-0 z-50">
       {/* responsiveness */}
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex justify-between h-12 items-center">
@@ -22,7 +22,10 @@ function Navbar() {
 
           <div className=" hidden md:flex space-x-6">
             {navbarLinks.map((link) => (
-              <a key={link.id} className="list-none flex items-center gap-2  cursor-pointer">
+              <a
+                key={link.id}
+                className="list-none flex items-center gap-2  cursor-pointer"
+              >
                 {link.icon}
                 {link.name}
               </a>
@@ -39,18 +42,15 @@ function Navbar() {
       {/* mobile menu design */}
       {isOpen && (
         <div className="md:hidden bg-lime-400 shadow-md p-3 space-y-4 ">
-          <a className="block" href="#">
-            Home
-          </a>
-          <a className="block" href="#">
-            Foods
-          </a>
-          <a className="block" href="#">
-            offers
-          </a>
-          <a className="block" href="#">
-            Help
-          </a>
+          {navbarLinks.map((link) => (
+            <a
+              key={link.id}
+              className="block flex flex-row  justify-start px-3 gap-2  cursor-pointer"
+            >
+              {link.icon}
+              {link.name}
+            </a>
+          ))}
         </div>
       )}
     </div>
